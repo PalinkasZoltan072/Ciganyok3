@@ -13,5 +13,5 @@ def beolvas(nevek, jegyek, elegedettsegek):
     fr.close()
 
 def main():
-    beolvas(nevek, jegyek, elegedettsegek)
+    beolvas(nevek,jegyek,elegedettsegek)
 main()
