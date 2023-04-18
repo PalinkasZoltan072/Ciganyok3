@@ -1,5 +1,5 @@
 def beolvas(nevek, jegyek, elegedettsegek):
-    fr = open("jegyek.txt," "r")
+    fr = open("jegyek.txt", "r")
     sor = fr.readline()
     while sor != "":
         sor = sor.split()
@@ -10,8 +10,19 @@ def beolvas(nevek, jegyek, elegedettsegek):
         jegyek.append(jegy)
         elegedettsegek.append(elegedettseg)
         sor = fr.readline()
+    #print(jegyek)
     fr.close()
-
+def jegyszamolas(jegyek):
+    f = len(jegyek)
+    z = 0
+    for i in range(f):
+        if jegyek[i] == 5:
+            z += 1
+    print(z)
 def main():
+    nevek = []
+    jegyek = []
+    elegedettsegek = []
     beolvas(nevek,jegyek,elegedettsegek)
+    jegyszamolas(jegyek)
 main()
