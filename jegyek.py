@@ -19,6 +19,7 @@ def jegyszamolas(jegyek):
         if jegyek[i] == 5:
             z += 1
     print(z,"darab ötös van")
+    return jegyek
 def osszesjegy(jegyek):
     f = len(jegyek)
     db = 0
