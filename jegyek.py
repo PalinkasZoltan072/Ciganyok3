@@ -18,11 +18,18 @@ def jegyszamolas(jegyek):
     for i in range(f):
         if jegyek[i] == 5:
             z += 1
-    print(z)
+    print(z,"darab ötös van")
+def osszesjegy(jegyek):
+    f = len(jegyek)
+    db = 0
+    for i in range(f):
+        db += jegyek[i]
+    print(db,"az összes jegy összege")
 def main():
     nevek = []
     jegyek = []
     elegedettsegek = []
     beolvas(nevek,jegyek,elegedettsegek)
     jegyszamolas(jegyek)
+    osszesjegy(jegyek)
 main()
