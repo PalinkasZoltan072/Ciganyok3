@@ -12,6 +12,8 @@ def beolvas(nevek, jegyek, elegedettsegek):
         sor = fr.readline()
     #print(jegyek)
     fr.close()
+
+
 def jegyszamolas(jegyek):
     f = len(jegyek)
     z = 0
@@ -19,7 +21,9 @@ def jegyszamolas(jegyek):
         if jegyek[i] == 5:
             z += 1
     print(z,"darab ötös van")
-    return jegyek
+    return z
+
+
 def osszesjegy(jegyek):
     f = len(jegyek)
     db = 0
@@ -27,6 +31,8 @@ def osszesjegy(jegyek):
         db += jegyek[i]
     print(db,"az összes jegy összege")
     return db
+
+
 def legalacsonyabb(elegedettsegek):
     kivalogat = []
     f = len(elegedettsegek)
@@ -35,6 +41,16 @@ def legalacsonyabb(elegedettsegek):
             kivalogat.append(elegedettsegek[i])
     print("Az 5 alatti elégedetségek ezek:","\n",kivalogat)
     return kivalogat
+
+def kereses(nevek, jegyek):
+    x = int(input("Ki kapott elsőnek ilyen jegyet: "))
+    n = len(jegyek)
+    i = 0
+    while i < n and not(x == jegyek[i]):
+        i += 1
+    if i < n:
+        print("Elsőnek", nevek[i], "kapott ilyen jegyet, ami=",x)
+
 def main():
     nevek = []
     jegyek = []
@@ -43,4 +59,6 @@ def main():
     jegyszamolas(jegyek)
     osszesjegy(jegyek)
     legalacsonyabb(elegedettsegek)
+    kereses(nevek, jegyek)
+    
 main()
