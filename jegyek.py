@@ -26,6 +26,15 @@ def osszesjegy(jegyek):
     for i in range(f):
         db += jegyek[i]
     print(db,"az összes jegy összege")
+    return db
+def legalacsonyabb(elegedettsegek):
+    kivalogat = []
+    f = len(elegedettsegek)
+    for i in range(f):
+        if elegedettsegek[i] <= 5:
+            kivalogat.append(elegedettsegek[i])
+    print("Az 5 alatti elégedetségek ezek:","\n",kivalogat)
+    return kivalogat
 def main():
     nevek = []
     jegyek = []
@@ -33,4 +42,5 @@ def main():
     beolvas(nevek,jegyek,elegedettsegek)
     jegyszamolas(jegyek)
     osszesjegy(jegyek)
+    legalacsonyabb(elegedettsegek)
 main()
