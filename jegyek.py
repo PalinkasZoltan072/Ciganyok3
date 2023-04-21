@@ -51,6 +51,24 @@ def kereses(nevek, jegyek):
     if i < n:
         print("Elsőnek", nevek[i], "kapott ilyen jegyet, ami=",x)
 
+
+def maxi(nevek, elegedettsegek):
+    maxim = 0
+    for i in range(1, len(elegedettsegek)):
+        if elegedettsegek[i] > elegedettsegek[maxim]:
+            maxim = i   
+    print(nevek[maxim], elegedettsegek[maxim])
+
+def megszamolas(nevek:list):
+    u = input("egy nevet kérek a listából:")
+    l = 0
+    for i in range(len(nevek)):
+        if nevek[i] == u:
+            l += 1
+     
+    print(u, "nevu embernek", l, "darab jegye van")
+
+
 def main():
     nevek = []
     jegyek = []
@@ -60,5 +78,7 @@ def main():
     osszesjegy(jegyek)
     legalacsonyabb(elegedettsegek)
     kereses(nevek, jegyek)
+    maxi(nevek, elegedettsegek)
+    megszamolas(nevek)
     
 main()
