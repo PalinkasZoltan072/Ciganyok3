@@ -153,7 +153,7 @@ def top3(nevek, jegyek, nevek2, lista):
             Ma += 1
         
     for i in range(len(nevek2)):
-        if 
+        pass
         
 
 
