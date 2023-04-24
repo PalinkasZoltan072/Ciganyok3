@@ -53,6 +53,8 @@ def kereses(nevek, jegyek):
         i += 1
     if i < n:
         print("Elsőnek", nevek[i], "kapott ilyen jegyet, ami=",x)
+    else:
+        print("nincs ilyen jegy, vagy rossz számértéket adtál meg")
 
 
 def maxi(nevek, elegedettsegek):
