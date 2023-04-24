@@ -68,10 +68,102 @@ def megszamolas(nevek:list):
      
     print(u, "nevu embernek", l, "darab jegye van")
 
+def top3(nevek, jegyek, nevek2, lista):
+    Li = 0
+    Gi = 0
+    So = 0
+    Sza= 0
+    Vi = 0
+    Le = 0
+    Fe = 0
+    Csa= 0
+    De = 0 
+    Do1= 0
+    Zsom=0 
+    Iz = 0
+    Zsol=0
+    No = 0
+    Fa = 0
+    Do2= 0
+    Lu = 0
+    Pa = 0
+    Esz= 0
+    At = 0
+    An = 0
+    Kl = 0
+    Kr = 0
+    Be = 0
+    Cse= 0
+    Ke = 0
+    Ma = 0
+    for i in range(len(nevek)):
+        if nevek[i] == "Lilla" and jegyek[i] == 1:
+            Li += 1
+        elif nevek[i] == "Gina" and jegyek[i] == 1:
+            Gi += 1
+        elif nevek[i] == "Soma" and jegyek[i] == 1:
+            So += 1
+        elif nevek[i] == "Szavanna" and jegyek[i] == 1:
+            Sza += 1
+        elif nevek[i] == "Viktor" and jegyek[i] == 1:
+            Vi += 1
+        elif nevek[i] == "Levente" and jegyek[i] == 1:
+            Le += 1
+        elif nevek[i] == "Ferenc" and jegyek[i] == 1:
+            Fe += 1
+        elif nevek[i] == "Csaba" and jegyek[i] == 1:
+            Csa += 1
+        elif nevek[i] == "Delfina" and jegyek[i] == 1:
+            De += 1
+        elif nevek[i] == "Dominik" and jegyek[i] == 1:
+            Do1 += 1
+        elif nevek[i] == "Zsombor" and jegyek[i] == 1:
+            Zsom += 1
+        elif nevek[i] == "Izaura" and jegyek[i] == 1:
+            Iz += 1
+        elif nevek[i] == "Zsolt" and jegyek[i] == 1:
+            Zsol += 1
+        elif nevek[i] == "Norbert" and jegyek[i] == 1:
+            No += 1
+        elif nevek[i] == "Fanni" and jegyek[i] == 1:
+            Fa += 1
+        elif nevek[i] == "Dominika" and jegyek[i] == 1:
+            Do2 += 1
+        elif nevek[i] == "Luca" and jegyek[i] == 1:
+            Lu += 1
+        elif nevek[i] == "Patrik" and jegyek[i] == 1:
+            Pa += 1
+        elif nevek[i] == "Eszter" and jegyek[i] == 1:
+            Esz += 1
+        elif nevek[i] == "Attila" and jegyek[i] == 1:
+            At += 1
+        elif nevek[i] == "Anna" and jegyek[i] == 1:
+            An += 1
+        elif nevek[i] == "Klaudia" and jegyek[i] == 1:
+            Kl += 1
+        elif nevek[i] == "Krisztina" and jegyek[i] == 1:
+            Kr += 1
+        elif nevek[i] == "Bence" and jegyek[i] == 1:
+            Be += 1
+        elif nevek[i] == "Csenge" and jegyek[i] == 1:
+            Cse += 1
+        elif nevek[i] == "Kevin" and jegyek[i] == 1:
+            Ke += 1
+        elif nevek[i] == "Martin" and jegyek[i] == 1:
+            Ma += 1
+        
+    for i in range(len(nevek2)):
+        if 
+        
+
+
+
 
 def main():
+    lista = []
     nevek = []
     jegyek = []
+    nevek2 = ["Lilla", "Gina", "Soma", "Szavanna", "Viktor", "Levente", "Ferenc", "Csaba", "Delfina", "Dominik", "Zsombor", "Izaura", "Zsolt", "Norbert", "Fanni", "Dominika", "Luca", "Patrik", "Eszter", "Attila", "Anna", "Klaudia", "Krisztina", "Bence", "Csenge", "Kevin", "Martin"]
     elegedettsegek = []
     beolvas(nevek,jegyek,elegedettsegek)
     jegyszamolas(jegyek)
@@ -80,5 +172,6 @@ def main():
     kereses(nevek, jegyek)
     maxi(nevek, elegedettsegek)
     megszamolas(nevek)
+    top3(nevek, jegyek, nevek2, lista)
     
 main()
